@@ -1,0 +1,28 @@
+.footer {
+  background: linear-gradient(#333, #000);
+  font-family: 'Source Code Pro', monospace;
+  font-weight:300;
+  font-size: 0.75em;
+
+  @include full;
+	
+	div {
+		&:nth-child(2){
+			margin-left: 15%;
+		}
+	}
+}
+
+.footer-container {
+	@include container;
+	padding:20px;
+
+	p {
+		color: white;
+		text-align: center;
+	}
+
+	span {
+		margin-top: 5px;
+	}
+}

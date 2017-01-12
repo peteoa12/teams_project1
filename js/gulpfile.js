@@ -18,11 +18,11 @@ var onError = function(err) {
 };
 
 gulp.task('browser-sync', function(){
-	browserSync.init({
-		server: {
-			baseDir: './'
-		}
-	});
+  browserSync.init({
+    server: {
+      baseDir: './'
+    }
+  });
 });
 
 gulp.task('minify-css', function(){

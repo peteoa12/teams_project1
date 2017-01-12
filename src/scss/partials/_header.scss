@@ -1,0 +1,32 @@
+
+.header {
+	@include full;
+	float: left;
+	margin-bottom: 15px;
+	background-color: #CFD1CD;
+}
+
+.logo_container {
+	@include span(1);
+	cursor:pointer;
+
+	.logo {
+		@include full;
+		max-width: 76px;
+		min-width: 40px;
+	}
+}
+
+.nav {
+	@include span(last 11);
+	margin-top: 30px;
+	
+	li {
+		@include gallery(4 of 12);
+		text-align: center;
+	}
+}
+
+
+
+

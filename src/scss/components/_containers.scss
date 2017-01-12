@@ -1,0 +1,21 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding:0;
+  float: left;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrapper {
+	@include container;
+}
+
+.nav_wrapper {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.page-wrap {
+	min-height: 100vh;
+}

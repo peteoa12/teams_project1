@@ -11,17 +11,15 @@ var GoogleMapApi = (function(options) {
 
     function initMap() {
         var centerPoint = {
-            lat: 32.0929887,
-            lng: 20.0037614
+            lat: 32.7868125,
+            lng: -79.9483537
         };
 
         infowindow = new google.maps.InfoWindow();
         map = new google.maps.Map(document.getElementById('map'), {
             center: centerPoint,
-            zoom: 2
+            zoom: 13
         });
-
-      
     };
 
    
