@@ -2,30 +2,35 @@
 .header {
 	@include full;
 	float: left;
-	margin-bottom: 15px;
 	background-color: #CFD1CD;
+
+	@include breakpoint($medium) {
+		margin-bottom: 15px;
+		
+	}
 }
 
-.logo_container {
-	@include span(1);
+.logo_container {  
+	@include span(2);
 	cursor:pointer;
 
 	.logo {
 		@include full;
 		max-width: 76px;
-		min-width: 40px;
 	}
 }
 
 .nav {
-	@include span(last 11);
+	@include span(last 10);
 	margin-top: 30px;
 	
 	li {
 		@include gallery(4 of 12);
 		text-align: center;
+		font-size: .75em;
 	}
 }
+
 
 
 

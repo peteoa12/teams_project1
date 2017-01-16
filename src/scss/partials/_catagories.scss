@@ -1,6 +1,9 @@
 
-.catagories_container {
-	@include span(1.5 of 12);
+.catagories {
 	float: left;
-	border: 1px solid red;
+
+	@include breakpoint($large) {
+		@include span(1.5 of 12);
+		border: 1px solid red;
+	}
 }
