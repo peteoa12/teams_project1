@@ -1,9 +1,0 @@
-
-.catagories {
-	float: left;
-
-	@include breakpoint($large) {
-		@include span(1.5 of 12);
-		border: 1px solid red;
-	}
-}
