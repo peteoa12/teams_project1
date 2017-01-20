@@ -4,7 +4,7 @@ $susy: (
   output: float, 
   math: fluid, 
   column-width: 40px, 
-  container: 95%,
+  container: 98%,
   container-position: center, 
   last-flow: to,
   columns: 12,
@@ -12,3 +12,5 @@ $susy: (
   gutter-position: after, 
   global-box-sizing: border-box, 
 );
+
+$list_layout: layout(12 2 float fluid);

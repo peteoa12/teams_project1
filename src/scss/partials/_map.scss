@@ -9,7 +9,7 @@
   }
 
   @include breakpoint($large) {
- 	width:calc(100% - 400px);
+ 	width:calc(100% - 500px);
  	float: right;
  	height:100vh;
   }

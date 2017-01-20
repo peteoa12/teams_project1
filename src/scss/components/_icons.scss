@@ -1,0 +1,51 @@
+
+
+
+.icon {
+    float: left;
+    text-indent: -999999px;
+    overflow: hidden;
+    border-radius: 50%;
+    background-color: $icon;
+    margin: 5px 23%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80%;
+	width: 65px;
+    height: 65px;
+    @include trans;
+
+    &:hover {
+    	background-size: 100%;
+    }
+}
+
+.icon--one {
+	background-image: url(../img/icon_attractions.png);
+}
+
+.icon--two {
+	background-image: url(../img/icon_cafe.png);
+}
+
+.icon--three {
+	background-image: url(../img/icon_dinning.png);
+}
+
+.icon--four {
+	background-image: url(../img/icon_nightlife.png);
+}
+
+.icon--five {
+	background-image: url(../img/icon_grocery.png);
+}
+
+.icon--six {
+	background-image: url(../img/icon_gas.png);
+}
+
+.active {
+    background-size:100%;
+    background-color: $teal;
+}
+

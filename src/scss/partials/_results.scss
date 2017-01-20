@@ -3,10 +3,28 @@
 	float: left;
 	width: 100%;
 	height: 100vh;
-	background-color: $darkgrey;
+	background-color: $lightgrey;
 
 	@include breakpoint($large) {
-		width:400px;
+		width:500px;
+	}
+}
+
+.results--search {
+	width: 100%;
+	padding:5px;
+
+	.search_input {
+		width: 100%;
+		padding:15px 10px;
+		border: 1px solid $darkgrey;
+		border-radius: 20px;
+	}
+
+
+	input[type=text]:focus {
+		border-color: $icon;
+		outline: none;
 	}
 }
 
@@ -24,11 +42,48 @@
 .result--options {
 	@include span(last 10 of 12);
 	float: left;
-	background-color: grey;
+	background-color: $lightgrey;
 	height: 100vh;
 
 	@include breakpoint($large) {
 		@include span(last 9 of 12);
+	}
+}
+
+.result {
+	width: 99%;
+	// border: 1px solid blue;
+	padding: 15px;
+	margin-bottom: 3px;
+	float: left;
+	background-color: white;
+	@include trans;
+
+	&:hover {
+		background-color: #fefefe;
+		transform:scale(1.02);
+	}
+
+	.result_img {
+		width: span(3 of $list_layout);
+		// float: left;
+	}
+
+	.result_copy {
+		width: span(last 9 of $list_layout);
+		margin-left: 5px;
+		float: right;
+	}
+
+	.result_title {
+		font-size: 1.25em;
+	}
+
+	.result_address {
+		padding-top: 10px;
+		width: 70%;
+		max-width: 135px;
+		font-size: 0.90em;
 	}
 }
 

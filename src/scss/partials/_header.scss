@@ -6,21 +6,24 @@
 }
 
 .logo_container {  
-	@include span(2);
+	@include span(1);
 	cursor:pointer;
 
 	.logo {
 		@include full;
-		max-width: 76px;
+		max-width: 60px;
+		min-width: 50px;
 	}
 }
 
 .nav {
-	@include span(last 10);
-	margin-top: 30px;
+	@include span(last 11);
+	margin-top: 20px;
 	
 	li {
 		@include gallery(3 of 12);
+		// border: 1px solid blue;
+		padding:10px;
 		text-align: center;
 		font-size: .75em;
 	}

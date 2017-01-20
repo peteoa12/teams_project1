@@ -7,13 +7,17 @@ html, body {
   -webkit-font-smoothing: antialiased;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 .wrapper {
 	@include container;
 }
 
 .nav_wrapper {
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .page-wrap {

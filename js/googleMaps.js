@@ -11,8 +11,8 @@ var GoogleMapApi = (function(options) {
 
     function initMap() {
         var centerPoint = {
-            lat: 32.7868125,
-            lng: -79.9483537
+            lat: 32.7799072,
+            lng: -79.9337208
         };
 
         infowindow = new google.maps.InfoWindow();
@@ -27,7 +27,6 @@ var GoogleMapApi = (function(options) {
         var marker = new google.maps.Marker({
             position: result.geometry.location,
             map: map,
-            icon: result.icon,
             animation: google.maps.Animation.DROP
         });
         
@@ -67,12 +66,12 @@ var GoogleMapApi = (function(options) {
     function setInfoWindowContent(info) {
         var contentString = ``;
 
-        if (info.title) contentString += `<h3 class="marker-title">${info.title}<h3>`;
-        if (info.date) contentString += `<p class="show-date">${info.date}</p>`;
-        if (info.link && info.link_img) contentString += `<a href="${info.link}" target="_blank" class="link"><img src="${info.link_img}"></a>`;
-        if (info.other) contentString += `<div class="other">${info.description}</div>`;
+        // if (info.title) contentString += `<h3 class="marker-title">${info.title}<h3>`;
+        // if (info.date) contentString += `<p class="show-date">${info.date}</p>`;
+        // if (info.link && info.link_img) contentString += `<a href="${info.link}" target="_blank" class="link"><img src="${info.link_img}"></a>`;
+        // if (info.other) contentString += `<div class="other">${info.description}</div>`;
 
-        infowindow.setContent(contentString);
+        // infowindow.setContent(contentString);
     };
 
     return {
