@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70.83 70.83">
+  <defs>
+    <style>
+      .icon_color {
+        stroke: #787878;
+        stroke-miterlimit: 10;
+        stroke-width: 1.5px;
+       <!--  fill: #787878; -->
+        fill: none;
+      }
+    </style>
+  </defs>
+  <title>Asset 2</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_2-2" data-name="Layer 2">
+      <g>
+        <path class="icon_color" d="M30.94,18.57H47.19a2.69,2.69,0,0,1,2.69,2.69v29a0,0,0,0,1,0,0H28.26a0,0,0,0,1,0,0v-29A2.69,2.69,0,0,1,30.94,18.57Z"/>
+        <rect class="icon_color" x="25.59" y="50.2" width="26.96" height="3.11"/>
+        <rect class="icon_color" x="31.17" y="21.8" width="15.79" height="8.65"/>
+        <line class="icon_color" x1="26.05" y1="24.9" x2="15.45" y2="32.16"/>
+        <path class="icon_color" d="M16.33,31.66s3,1.82,4.41.83l3.57-2.43-1.79-2.62Z"/>
+        <path class="icon_color" d="M47,34v4.83a6.74,6.74,0,0,1-6.74,6.74h-17c-6,0-10.92-3.72-10.92-8.32,0-2.45,1.39-3.86,3.59-5.39"/>
+        <rect class="icon_color" x="31.17" y="33.21" width="3.72" height="7.67"/>
+        <circle class="icon_color" cx="46.96" cy="33.99" r="1.23"/>
+      </g>
+      <circle class="icon_color" cx="35.41" cy="35.41" r="34.66"/>
+    </g>
+  </g>
+</svg>
