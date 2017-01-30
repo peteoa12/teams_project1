@@ -3,6 +3,7 @@
   width: 100%;
   height: 300px;
   margin-right: 0;
+   transition: all 0.1s;
   
   @include breakpoint($medium) {
   	height: 400px;
@@ -18,5 +19,6 @@
 #map { //move to separate file
   width: 100%;
   height: 100%;
+
 }
 

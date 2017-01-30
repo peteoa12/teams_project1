@@ -27,19 +27,22 @@ function eventListeners(){
 
 function hideShow(){
 
-	// ICON LINK<><><><><><><><><><><><><><><><><><><><>
-
-	$(".icon_link").on('click', function(event) {
-		var place = $(this).data('place')
-		console.log(place);
-
-	//HIDE AND SHOW<><><><><><><><><><><><><><><><><><>
+	$(".icon").on('click', function(event) {
+		var placeType = $(this).data('place-type')
+		console.log("placeType", placeType);
 		
-		if(!$(".icon_" + place)){
-			$(this).hide();
-		}else{
-			$(this).show();
-		}
+		places.forEach(function(place) {
+			if (place.placeType == placeType) {
+				// show this item in the list and on the map
+				console.log("show", place)
+				$(place.$element).show();
+				console.log(place.google_data);
+			} else {
+				// hide this item in list and on map
+				console.log("hide", place)
+				$(place.$element).hide();
+			}
+		})
 		 
 	});
 }

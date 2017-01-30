@@ -58,7 +58,8 @@ var GoogleMapApi = (function(){
   
 
   function createInfoWindow(place, marker) {
-    var contentString = `<h3 class="marker-title">${place.title}<h3>`
+    var contentString = `<h3 class="marker-title">${place.name}<h3>
+    <address>${place.formatted_address}</adress><a href="tel:${place.formatted_phone_number}">${place.formatted_phone_number}</a><span>${place.rating} stars</span>`
     infowindow.setContent(contentString);
   };
 

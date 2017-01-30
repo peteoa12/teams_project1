@@ -37,11 +37,6 @@
 	@include breakpoint($large) {
 		@include span(3 of 12);
 	}
-
-	h3 {
-		text-align: center;
-		margin-bottom: 10px;
-	}
 }
 
 .result--options {
