@@ -2,9 +2,9 @@
 
 var GoogleMapApi = (function(){
 
-   var shared = {};
+  var shared = {};
     
-  var map, infoWindow;
+  var map, infoWindow;//, geocoder;
 
   var centerPoint = {
       lat: 32.7799072,
@@ -13,11 +13,25 @@ var GoogleMapApi = (function(){
 
   function initMap() {
     infowindow = new google.maps.InfoWindow();
+    // geocoder = new google.maps.Geocoder();
+
 
     map = new google.maps.Map(document.getElementById('map'), {
       center: centerPoint,
       zoom: 13
     });
+
+
+    // geocoder.geocode({
+    //   'address': "812 Lambert Drive, Atlanta"
+    // }, function(results, status) {
+    //   if (status == 'OK') {
+    //     console.log(results);
+    //     map.setCenter(results[0].geometry.location);
+    //   } else {
+    //     console.warn("geocode didnt work");
+    //   }
+    // })
 
     var image = {
         url: '../assets/img/home.png',
@@ -42,38 +56,45 @@ var GoogleMapApi = (function(){
     });
   };
   
-  function createMarker(result) {
-    var marker = new google.maps.Marker({
-      position: result.geometry.location,
-      map: map,
-      title: result.name,
-      animation: google.maps.Animation.DROP
-    });
-    
-    google.maps.event.addListener(marker, 'click', function() {
-        createInfoWindow(result, marker);
-        infowindow.open(map, this);
-    });
-  };
 
-  function createInfoWindow(result, marker) {
-    var contentString = `<h3 class="marker-title">${result.title}<h3>`
+  function createInfoWindow(place, marker) {
+    var contentString = `<h3 class="marker-title">${place.title}<h3>`
     infowindow.setContent(contentString);
   };
 
-
-  function search() {
-    var searchItem = $("form input[name=query]").value;
+  function getPlaceById(id, callback, place) {
     var request = {
-      location: centerPoint,
-      radius: '5',
-      query: searchItem,
-      openNow:true
+      placeId: id
     };
 
     var service = new google.maps.places.PlacesService(map);
-    service.textSearch(request, processPlacesResults);
+    service.getDetails(request, function(place, status){
+      if (status == google.maps.places.PlacesServiceStatus.OK) {
+        callback(place);
+        createMarkerFromPlaceId(place);
+      } else {
+        console.warn("bad places search");
+      }
+    });
   }
+
+
+  function createMarkerFromPlaceId(place) {
+
+    
+    place.marker = new google.maps.Marker({
+      position: place.geometry.location,
+      map: map,
+      title: place.name,
+      animation: google.maps.Animation.DROP
+    });
+    
+    google.maps.event.addListener(place.marker, 'click', function() {
+        createInfoWindow(place, place.marker);
+        infowindow.open(map, this);
+    });
+    
+  };
 
  
   $('form[name=search] button').click(function(event) {
@@ -82,22 +103,11 @@ var GoogleMapApi = (function(){
     console.log("form submitted");
   });
 
-  function processPlacesResults(results, status) {
-    if (status == google.maps.places.PlacesServiceStatus.OK) {
-      for (var i = 0; i < results.length; i++) {
-        var result = results[i];
-        createMarker(result);
-      }
-    }
-  };
-
- 
-
-
     
   return {
     init: initMap,
-    createMarker: createMarker
+    createMarkerFromPlaceId: createMarkerFromPlaceId,
+    getPlaceById: getPlaceById
   };
 
 }());

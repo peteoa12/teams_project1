@@ -49,6 +49,7 @@
 	float: left;
 	background-color: white;
 	height: 100vh;
+	overflow-y: scroll; 
 
 	@include breakpoint($large) {
 		@include span(last 9 of 12);
@@ -71,7 +72,6 @@
 
 	.result_img {
 		width: span(3 of $list_layout);
-		// float: left;
 	}
 
 	.result_copy {
