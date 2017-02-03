@@ -16,13 +16,15 @@
         <div class="header">
             <div class="wrapper nav_wrapper">
 
-                <a class="logo_container" href="#"><img class="logo" src="assets/img/airbnb-logo.png">
+                <a class="logo_container" href="#">
+                    <img class="logo" src="assets/img/airbnb-logo.png">
+                    <h1>airbnb<span>directory</span></h1>
                 </a>
                 <div class="nav">
                     <ul>
-                        <li>About Our Home</li>
-                        <li>Host Picks</li>
-                        <li>Day Trips</li>
+                        <li class="nav_links">About Our Home</li>
+                        <li class="nav_links">Host Suggestions</li>
+                        <li class="nav_links">Saved Activities</li>
                     </ul>
                 </div>
             </div>
@@ -33,13 +35,6 @@
         </div>
 
         <div class="results">
-
-<!--             <div class="results--search">
-                <form name="search">
-                    <input class="search_input" type="text" name="query" placeholder="e.g. Pizza">
-                    <button type="submit"></button>
-                </form>
-            </div> -->
 
             <div class="result--catagories">
                 <ul class="icons">
@@ -83,6 +78,7 @@
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script type="text/javascript" src="js/data.js"></script>
     <script type="text/javascript" src="js/googleMaps.js"></script>
+    <script type="text/javascript" src="js/directions.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
 
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC_G3Bt7ecK_FXgRCAFQA9i-5y8ZPGp5H8&callback=init&libraries=places" async defer></script>

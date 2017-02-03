@@ -13,34 +13,20 @@ var GoogleMapApi = (function(){
 
   function initMap() {
     infowindow = new google.maps.InfoWindow();
-    // geocoder = new google.maps.Geocoder();
-
-
+  
     map = new google.maps.Map(document.getElementById('map'), {
       center: centerPoint,
       zoom: 13
     });
 
-
-    // geocoder.geocode({
-    //   'address': "812 Lambert Drive, Atlanta"
-    // }, function(results, status) {
-    //   if (status == 'OK') {
-    //     console.log(results);
-    //     map.setCenter(results[0].geometry.location);
-    //   } else {
-    //     console.warn("geocode didnt work");
-    //   }
-    // })
-
     var image = {
         url: '../assets/img/home.png',
         // This marker is 32 pixels wide by 32 pixels high.
-        size: new google.maps.Size(32, 32),
+        size: new google.maps.Size(80, 80),
         // The origin for this image is (0, 0).
         origin: new google.maps.Point(0, 0),
         // The anchor for this image is the base of the flagpole at (0, 32).
-        anchor: new google.maps.Point(15, 32)
+        anchor: new google.maps.Point(50, 55)
     };
     
     var marker = new google.maps.Marker({
@@ -58,8 +44,8 @@ var GoogleMapApi = (function(){
   
 
   function createInfoWindow(place, marker) {
-    var contentString = `<h3 class="marker-title">${place.name}<h3>
-    <address>${place.formatted_address}</adress><a href="tel:${place.formatted_phone_number}">${place.formatted_phone_number}</a><span>${place.rating} stars</span>`
+    var contentString = `<h3 class="marker marker_title">${place.name}<h3></br>
+    <address class="marker marker_address">${place.formatted_address}</adress></br><a class="marker marker_tele" href="tel:${place.formatted_phone_number}">${place.formatted_phone_number}</a></br><span class="marker marker_rating">${place.rating} stars</span>`
     infowindow.setContent(contentString);
   };
 
@@ -80,13 +66,32 @@ var GoogleMapApi = (function(){
   }
 
 
+  function hidePin(pin) {
+    pin.setMap(null);
+  }
+  function showPin(pin) {
+    pin.setMap(map);
+  }
+
+
   function createMarkerFromPlaceId(place) {
+
+    var placeMarker = {
+        url: '../assets/img/place.png',
+        // This marker is 32 pixels wide by 32 pixels high.
+        size: new google.maps.Size(60, 60),
+        // The origin for this image is (0, 0).
+        origin: new google.maps.Point(0, 0),
+        // The anchor for this image is the base of the flagpole at (0, 32).
+        anchor: new google.maps.Point(50, 60)
+    };
 
     
     place.marker = new google.maps.Marker({
       position: place.geometry.location,
       map: map,
       title: place.name,
+      icon: placeMarker,
       animation: google.maps.Animation.DROP
     });
     
@@ -105,10 +110,12 @@ var GoogleMapApi = (function(){
   });
 
     
-  return {
+  return { //This exposes GoogleMapApi so you can call it's functions in other places
     init: initMap,
     createMarkerFromPlaceId: createMarkerFromPlaceId,
-    getPlaceById: getPlaceById
+    getPlaceById: getPlaceById,
+    hidePin: hidePin,
+    showPin: showPin,
   };
 
 }());

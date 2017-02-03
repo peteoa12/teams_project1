@@ -13,7 +13,6 @@ var getExtraPlaceData = function() {
 var addPlaceToDom = function( place, data ) {
 	console.log(data);
 
-	// if(data.rating == 'undefined'){$('.rating').append('no rating');}
 	place.$element = $(
 	'<li class="result cafe"><img class="result_img" src="https://pbs.twimg.com/profile_images/608377553808703489/2gBSCjiq.jpg"><div class="result_copy"><span class="rating">'+data.rating+'</span><h2 class="result_title">'+data.name+'</h2><address class="result_address">'+data.formatted_address+'</address></div></li>')
 
@@ -32,15 +31,17 @@ function hideShow(){
 		console.log("placeType", placeType);
 		
 		places.forEach(function(place) {
+			if (!place.google_data) return;
 			if (place.placeType == placeType) {
 				// show this item in the list and on the map
 				console.log("show", place)
 				$(place.$element).show();
-				console.log(place.google_data);
+				GoogleMapApi.showPin(place.google_data.marker);
 			} else {
 				// hide this item in list and on map
-				console.log("hide", place)
+				console.log("hide", place);
 				$(place.$element).hide();
+				GoogleMapApi.hidePin(place.google_data.marker);
 			}
 		})
 		 

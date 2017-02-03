@@ -8,7 +8,7 @@
 	box-sizing:border-box;
 }
 
-div {
+div, li {
 	@include trans;
 }
 
@@ -19,6 +19,7 @@ div {
 @import 'partials/footer';
 @import 'partials/results';
 @import 'components/icons';
+@import 'components/markers';
 @import 'partials/map';
 
 
