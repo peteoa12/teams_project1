@@ -8,6 +8,20 @@
 	box-sizing:border-box;
 }
 
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding:0;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+	background: url(../img/background.jpg) no-repeat center;
+	background-size: cover;
+	font-family: 'Arial', sans-serif;
+}
+
 div, li {
 	@include trans;
 }
@@ -21,6 +35,8 @@ div, li {
 @import 'components/icons';
 @import 'components/markers';
 @import 'partials/map';
+
+
 
 
 

@@ -2,11 +2,12 @@
 .header {
 	@include full;
 	float: left;
-	background-color: #CFD1CD;
+	background-color: #ffffff;
+	-webkit-box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.80);
 }
 
 .logo_container {  
-	@include span(1);
+	@include span(3);
 	cursor:pointer;
 
 	.logo {
@@ -17,16 +18,24 @@
 }
 
 .nav {
-	@include span(last 11);
+	@include span(last 7);
 	margin-top: 20px;
 	
 	li {
 		@include gallery(4 of 12);
 		// border: 1px solid blue;
-		padding:10px;
+		padding:5px;
 		text-align: center;
-		font-size: .75em;
+		font-size: 1.5em;
+		font-family: "korolev", sans-serif;
+		color: #bfbbbb;
+		cursor: pointer;
 	}
+}
+
+.nav_active {
+	font-weight: bold;
+	color: $darkgrey;
 }
 
 
