@@ -7,14 +7,45 @@
 }
 
 .logo_container {  
-	@include span(3);
-	cursor:pointer;
 
+	min-width: 115px;
+	padding: 5px;
+	
 	.logo {
-		@include full;
-		max-width: 60px;
+		@include span(3);
+		max-width: 50px;
 		min-width: 50px;
 	}
+
+	@include span(3);
+	cursor:pointer;
+	text-decoration: none;
+	font-family: $heading;
+	font-weight: bold;
+	min-width: 115px;
+	
+
+	.logo {
+		@include span(1);
+		max-width: 50px;
+		min-width: 50px;
+	}
+	
+	div {
+		margin-top: 5px;
+
+		h1 {
+			font-size:1.5em; 
+			color: #d35b60;
+			margin-left: 5px;
+		}
+
+		span {
+			font-size: 1em;
+			color:#c0afaf;
+		}
+	}
+
 }
 
 .nav {
@@ -27,7 +58,7 @@
 		padding:5px;
 		text-align: center;
 		font-size: 1.5em;
-		font-family: "korolev", sans-serif;
+		font-family: $heading;
 		color: #bfbbbb;
 		cursor: pointer;
 	}

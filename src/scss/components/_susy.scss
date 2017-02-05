@@ -4,11 +4,11 @@ $susy: (
   output: float, 
   math: fluid, 
   column-width: 40px, 
-  container: 98%,
+  container: 95%,
   container-position: center, 
   last-flow: to,
   columns: 12,
-  gutters: 0,
+  gutters: 0.7,
   gutter-position: after, 
   global-box-sizing: border-box, 
 );

@@ -14,7 +14,7 @@ var addPlaceToDom = function( place, data, photo ) {
 	console.log(data);
 
 	place.$element = $(
-	`<li class="result cafe"><img class="result_img" src="https://pbs.twimg.com/profile_images/608377553808703489/2gBSCjiq.jpg"><div class="result_copy"><span class="rating">${data.rating}</span><h2 class="result_title">${data.name}</h2><address class="result_address">${data.formatted_address}</address></div></li>`)
+	`<li class="result"><img class="result_img" src="https://pbs.twimg.com/profile_images/608377553808703489/2gBSCjiq.jpg"><div class="result_copy"><span class="rating">${data.rating}</span><h2 class="result_title">${data.name}</h2><address class="result_address">${data.formatted_address}</address></div></li>`)
 
 	$(".results_list").append(place.$element); //reference to the data structure.
 

@@ -8,7 +8,14 @@
     <link rel="stylesheet" href="assets/css/main.min.css">
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     <script src="https://use.typekit.net/xxg0met.js"></script>
-    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <script src="https://use.fontawesome.com/0fba277326.js"></script>
+    <script>
+        try {
+            Typekit.load({
+                async: true
+            });
+        } catch (e) {}
+    </script>
 </head>
 
 <body>
@@ -20,7 +27,10 @@
 
                 <a class="logo_container" href="#">
                     <img class="logo" src="assets/img/airbnb-logo.png">
-                    <h1>airbnb<span>directory</span></h1>
+                    <div>
+                        <h1>airbnb</h1>
+                        <span>directory</span>
+                    </div>
                 </a>
                 <div class="nav">
                     <ul>
@@ -64,11 +74,35 @@
             <div class="result--options">
                 <ul class="results_list">
                     <li class="result">
-                        <div class="place_title"></div>
+                        <div class="result_title">
+                            <h2>Husk<span>- Southern Restaurant (US)</span></h2>
+                        </div>
+                        <img class="result_img" src="https://pbs.twimg.com/profile_images/608377553808703489/2gBSCjiq.jpg">
+                        <div class="result_content">
+                            <div class="rating_container">
+                                <div class="rating">4.5</div>
+                                <div class="star_container">
+                                    <div class="starsBar"></div>
+                                    <div class="starsBar2"></div>
+                                </div>
+                                <div class="price">$$$</div>
+                            </div>
+                            <hr>
+                            <div class="interactive">
+                                <i class="fa fa-star result_icon" aria-hidden="true" title="Add to Favorites"></br><span>Favorite</span></i>
+                                <i class="fa fa-globe result_icon" aria-hidden="true" title="Website"></br><span>Website</span></i>
+                                <i class="fa fa-phone result_icon" aria-hidden="true" title="Contact"></br><span>Contact</span></i>
+                                <i class="fa fa-share-alt result_icon" aria-hidden="true" title="Share"></br><span>Share</span></i>
+                            </div>
+                            <div class="user_review">
+                                <h6 class="user_title">Host Description</h6>
+                                <p class="reveiw">Lorem ipsum dolor sit amet, consectetur adipisicing elit!</p>
+                            </div>
+                        </div>
                     </li>
                 </ul>
             </div>
-            
+
         </div>
 
     </div>

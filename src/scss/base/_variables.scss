@@ -1,16 +1,22 @@
 
-//Color board
+//Brand colors
 $icon: #FF5A5F;
 $iconSelected: #f15c61;
 $teal: #00A699;
 $orange: #FC642D;
-$darkgrey:#7b797a;
+$darkgrey:#7d7e7f;
 $lightgrey:#767676;
 
-$frosted:rgba(255,255,255,0.9);
+//Opaques
+$frosted:rgba(255,255,255,0.8);
+$shaded:rgba(0,0,0,0.7);
+
+
+//Fonts
+$heading: 'korolev', sans-serif;
+$body: 'Arial', sans-serif;
 
 //Transitions
-
 @mixin trans {
 	transition: all 0.2s ease-in-out;
 }
