@@ -37,7 +37,7 @@ var GoogleMapApi = (function(){
     });
     
     google.maps.event.addListener(marker, 'click', function() {
-        infowindow.setContent('My Airbnb');
+        infowindow.setContent('My Airbnb - 123 func street, Charleston, SC, 12345');
         infowindow.open(map, this);
     });
   };
