@@ -6,63 +6,105 @@
 	-webkit-box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.80);
 }
 
-.logo_container {  
+.logo_container { 
 
-	min-width: 115px;
-	padding: 5px;
-	
-	.logo {
-		@include span(1);
-		max-width: 50px;
-		min-width: 50px;
-		margin-right: 5px;
-	}
-
-	@include span(3);
+	@include span(2);
 	cursor:pointer;
 	text-decoration: none;
 	font-family: $heading;
 	font-weight: bold;
-	min-width: 115px;
-	
+	min-width: 115px; 
 
 	.logo {
 		@include span(1);
-		max-width: 50px;
-		min-width: 50px;
+		width: 50px;
+		margin:5px 10px 0 0;
 	}
-	
+
 	div {
-		margin-top: 5px;
+		margin:15px 0;
 
 		h1 {
-			font-size:1.5em; 
+			font-size:0.7em; 
 			color: #d35b60;
 			margin-left: 5px;
 		}
 
 		span {
-			font-size: 1em;
+			font-size: 0.7em;
 			color:#c0afaf;
 		}
 	}
+	
+
+	@include breakpoint($medium) {
+		min-width: 115px;
+		padding: 5px;
+
+		div {
+			margin:15px 0;
+
+			h1 {
+				font-size:1.2em; 
+			}
+
+			span {
+				font-size: 0.8em;
+			}
+		}
+	}
+
+	@include breakpoint($large) {
+
+		div {
+			margin:15px 0;
+
+			h1 {
+				font-size:1.5em; 
+			}
+
+			span {
+				font-size: 1em;
+				color:#c0afaf;
+			}
+		}
+
+	}
+
 
 }
 
 .nav {
-	@include span(last 7);
+	@include span(last 8);
 	margin-top: 20px;
-	
+
 	li {
-		@include gallery(4 of 12);
-		// border: 1px solid blue;
-		padding:5px;
+		@include gallery(4 of $list_layout);
 		text-align: center;
-		font-size: 1.5em;
+		font-size: 0.6em;
 		font-family: $heading;
 		color: #bfbbbb;
 		cursor: pointer;
+		margin-top: 0px;
+
 	}
+
+	@include breakpoint($medium) {
+		li {
+			padding:5px;
+			font-size: 1em;
+			margin-top: 5px;
+		}
+	}
+
+	@include breakpoint($large) {
+		li {
+			font-size: 1.5em;
+			margin-top: -5px;
+		}
+	}
+	
+
 }
 
 .nav_active {
