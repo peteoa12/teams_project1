@@ -19,20 +19,20 @@ var GoogleMapApi = (function(){
       zoom: 13
     });
 
-    var image = {
+    var homeIcon = {
         url: '../assets/img/home.png',
         // This marker is 32 pixels wide by 32 pixels high.
         size: new google.maps.Size(80, 80),
-        // The origin for this image is (0, 0).
+        // The origin for this homeIcon is (0, 0).
         origin: new google.maps.Point(0, 0),
-        // The anchor for this image is the base of the flagpole at (0, 32).
+        // The anchor for this homeIcon is the base of the flagpole at (0, 32).
         anchor: new google.maps.Point(50, 55)
     };
     
     var marker = new google.maps.Marker({
       position:centerPoint,
       map: map,
-      icon: image,
+      icon: homeIcon,
       animation: google.maps.Animation.DROP
     });
     
@@ -76,7 +76,7 @@ var GoogleMapApi = (function(){
 
   function createMarkerFromPlaceId(place) {
 
-    var placeMarker = {
+    var placeIcon = {
         url: '../assets/img/place.png',
         // This marker is 32 pixels wide by 32 pixels high.
         size: new google.maps.Size(60, 60),
@@ -91,7 +91,7 @@ var GoogleMapApi = (function(){
       position: place.geometry.location,
       map: map,
       title: place.name,
-      icon: placeMarker,
+      icon: placeIcon,
       animation: google.maps.Animation.DROP
     });
     

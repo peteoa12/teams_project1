@@ -12,7 +12,7 @@
 	padding: 5px;
 	
 	.logo {
-		@include span(3);
+		@include span(1);
 		max-width: 50px;
 		min-width: 50px;
 	}

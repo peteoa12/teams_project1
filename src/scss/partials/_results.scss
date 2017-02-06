@@ -1,7 +1,7 @@
 
 .result {
 	width: 100%;
-	padding: 15px;
+	// padding: 15px;
 	margin-bottom: 3px;
 	float: left;
 	background-color: rgba(255,255,255,0.5);
@@ -18,12 +18,13 @@
 
 	.result_title {
 		width: 100%;
-		-webkit-box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.10);
+		-webkit-box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.05);
 		color: $darkgrey;          
 
 		h2 {
 			width: 100%;
 			font-size: 1.2em;
+			padding:15px;
 		}
 
 		span {
@@ -39,6 +40,23 @@
 		width: 70%;
 		max-width: 135px;
 		font-size: 0.90em;
+	}
+}
+
+.result_content {
+	width: span(last 7 of $list_layout);
+	margin-left: 5px;
+	float: right;
+}
+
+.rating_container {
+	width: 100%;
+	font-size: 0.8em;
+	color: $darkgrey;
+	float: left;
+
+	.price {
+		float: right;
 	}
 }
 
@@ -95,34 +113,45 @@
 	background-color: $frosted;
 	height: 100vh;
 	overflow-y: scroll; 
+	// clear: both;
+
 
 	@include breakpoint($large) {
 		@include span(last 9 of 12);
 	}
 }
 
-.result_content {
-	width: span(last 7 of $list_layout);
-	margin-left: 5px;
-	float: right;
+hr {
+	margin-top: span(0.5);
+	margin-bottom: span(0.5);
 }
 
-.rating_container {
+
+.result_icon {
+	float: left;
 	width: 100%;
-}
+	font-family: 'korolev', sans-serif;
+	@include gallery(3 of $list_layout);
 
+}
 .interactive {
-	width: 100%;
 	.fa {
 		color: $teal;
-		text-align: center;
-		@include gallery(3 of $list_layout);
+		// text-align: center;
+		cursor: pointer;
+
 
 		span {
-			font-size: 0.5em;
+			font-size: 0.6em;
 			text-align: center;
 		}
 	}
+}
+
+.review_container {
+	float: left;
+	width: 100%;
+	clear: both;
 }
 
 
