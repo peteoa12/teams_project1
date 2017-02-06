@@ -52,13 +52,13 @@ var places = [
 	},
 	{
 		id: 8,
-		google_id: "ChIJlZkMdfd6_ogR_CQy34VY3hI",
+		google_id: "ChIJhW9sym96_ogRppqBuNTHT9A",
 		star: false,
 		placeType: "gas"
 	},
 	{
 		id: 9,
-		google_id: "ChIJmQqSKnd8_ogRdjckxlPQpLg",
+		google_id: "ChIJg3uRMw16_ogRrs22isylJvQ",
 		star: false,
 		placeType: "grocery"
 	}

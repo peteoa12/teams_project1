@@ -1,16 +1,16 @@
 
 .result {
 	width: 100%;
-	// padding: 15px;
-	margin-bottom: 3px;
 	float: left;
-	background-color: rgba(255,255,255,0.5);
+	margin-bottom: 3px;
+	background-color: rgba(255,255,255,.5);
+	padding: 0 5px 3px 0;
 	@include trans;
 
-	&:hover {
-		background-color: #fefefe;
-		transform:scale(1.02);
-	}
+	// &:hover {
+	// 	background-color: #fefefe;
+	// 	transform:scale(1.02);
+	// }
 
 	.result_img {
 		width: span(5 of $list_layout);
@@ -50,10 +50,18 @@
 }
 
 .rating_container {
-	width: 100%;
-	font-size: 0.8em;
-	color: $darkgrey;
-	float: left;
+    width: 100%;
+    font-size: .8em;
+    color: #7d7e7f;
+    float: left;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    
+
+    .rating {
+    	float: left;
+    	margin-right: 10px;
+    }
 
 	.price {
 		float: right;
@@ -121,10 +129,10 @@
 	}
 }
 
-hr {
-	margin-top: span(0.5);
-	margin-bottom: span(0.5);
-}
+// hr {
+// 	margin-top: span(0.5);
+// 	margin-bottom: span(0.5);
+// }
 
 
 .result_icon {
@@ -152,6 +160,9 @@ hr {
 	float: left;
 	width: 100%;
 	clear: both;
+	padding-top: 10px;
+	margin-top: 10px;
+	border-top: 1px solid #000;
 }
 
 

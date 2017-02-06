@@ -3,22 +3,31 @@
 
 .icon {
     float: left;
-    text-indent: -999999px;
-    overflow: hidden;
-    border-radius: 50%;
-    background-color: $icon;
-    margin: 5px 23%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 80%;
-    width: 65px;
-    height: 65px;
+    margin: 10px span(1);
+    width: span(10);
+    max-width: 65px;
+    max-height: 65px;
     cursor: pointer;
     @include trans;
 
-    h3 {
+    @include breakpoint($medium) {
+        margin: 15px span(3.2);
+    }
+
+
+    @include breakpoint($large) {
+        margin: 15px span(2.9);
+    }
+   
+
+    h6 {
         text-align: center;
         margin-bottom: 10px;
+        font-size: 0.5em;
+
+        @include breakpoint($medium) {
+            font-size: 1em;
+        }
     }
 
     &:hover {

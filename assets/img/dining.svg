@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70.83 70.83">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke: #787878;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-1 {
+        stroke-width: 1.5px;
+      }
+
+      .cls-2 {
+        stroke-width: 2.5px;
+      }
+    </style>
+  </defs>
+  <title>Asset 5</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_2-2" data-name="Layer 2">
+      <circle class="cls-1" cx="35.41" cy="35.41" r="34.66"/>
+      <g>
+        <circle class="cls-1" cx="35.16" cy="35.51" r="14.51"/>
+        <circle class="cls-1" cx="35.16" cy="35.51" r="10.33"/>
+        <rect class="cls-1" x="52.76" y="34.99" width="2.22" height="14.97" rx="1.11" ry="1.11" transform="translate(6.04 -6.71) rotate(7.55)"/>
+        <path class="cls-1" d="M53.57,36.28c-1.16,0-1.34-.46-1.29-.83L53.5,28c.2-1.51,1.94-5.77,3.5-5.56h0a.69.69,0,0,1,.61.77l-1.79,13"/>
+        <path class="cls-1" d="M16.13,22.83l.71,4.28A2.5,2.5,0,0,1,14.78,30h0a2.5,2.5,0,0,1-2.87-2.06l-.71-4.28"/>
+        <line class="cls-1" x1="13.67" y1="23.23" x2="14.56" y2="28.65"/>
+        <path class="cls-1" d="M18.17,49.73h0a1.5,1.5,0,0,1-1.53-1.4l-1.37-8.26a1.5,1.5,0,0,1,1-1.83h0a1.5,1.5,0,0,1,1.53,1.4l1.37,8.26A1.5,1.5,0,0,1,18.17,49.73Z"/>
+        <line class="cls-2" x1="14.93" y1="29.95" x2="16.26" y2="38.23"/>
+      </g>
+    </g>
+  </g>
+</svg>
