@@ -29,6 +29,26 @@
             font-size: 1em;
         }
     }
+
+    circle,
+    path, 
+    rect,
+    polygon,
+    polyline,
+    line {
+        @include trans;
+    }
+
+    &:hover {
+        circle,
+        path, 
+        rect,
+        polygon,
+        polyline,
+        line {
+            stroke: $icon;
+        }
+    }
 }
 
 .cta {
@@ -69,6 +89,10 @@
         }
     }
 }
+
+// .icon_title {
+//     color:$darkgrey;
+// }
 
 
 

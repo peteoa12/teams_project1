@@ -95,7 +95,11 @@ function hideShow(){
 }
 
 
-
+$('.icon').hover(function(){
+        $(this).css('color', '#FF5A5F');            
+},function(){
+        $(this).css('color', '#7d7e7f');   
+});
 
 
 var init = function() {
