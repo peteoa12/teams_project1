@@ -15,6 +15,7 @@
 		@include span(1);
 		max-width: 50px;
 		min-width: 50px;
+		margin-right: 5px;
 	}
 
 	@include span(3);

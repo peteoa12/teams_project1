@@ -29,47 +29,51 @@
             font-size: 1em;
         }
     }
+}
 
-    &:hover {
-    	background-size: 100%;
+.cta {
+    width: 100%;
+    padding: 15px 0;
+    // border: 1px solid red;
+    float: left;
+    margin-top: 15px;
+
+    .directions {
+        width: span(6);
+        float: left;
+        border: 1px solid $teal;
+        padding:2px;
+        text-decoration: underline;
+
+        cursor:pointer;
+    }
+
+    .uber {
+        // background: url(../img/uber-icon.png);
+        // background-repeat: no-repeat;
+        // background-size: 85%;
+        // background-position: center;
+        width: span(6 of $list_layout);
+        float: right;
+        // border:1px solid red;
+        text-decoration: none;
+
+        .uber_icon {
+            height: 20px;
+            width: 20px;
+            margin-left: 10px;
+        }
+
+        h6 {
+            float:right;
+            font-size: 0.7em;
+            text-align: center;
+            margin: 5px 20px 0 0;
+            color: $darkgrey;
+
+        }
     }
 }
 
-.icon--one {
-	background-image: url(../img/icon_attractions.png);
-}
-
-.icon--two {
-	background-image: url(../img/icon_cafe.png);
-}
-
-.icon--three {
-	background-image: url(../img/icon_dinning.png);
-}
-
-.icon--four {
-	background-image: url(../img/icon_nightlife.png);
-}
-
-.icon--five {
-	background-image: url(../img/icon_grocery.png);
-}
-
-.icon--six {
-	background-image: url(../img/icon_gas.png);
-}
-
-.active {
-    background-size:100%;
-    background-color: $teal;
-}
 
 
-// .icon {
-// 	@include trans;
-
-
-// 	&:hover {
-// 		stroke: $icon;
-// 	}
-// }
