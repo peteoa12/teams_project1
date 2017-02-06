@@ -8,12 +8,18 @@
 
 .logo_container { 
 
+
 	@include span(2);
 	cursor:pointer;
 	text-decoration: none;
 	font-family: $heading;
 	font-weight: bold;
 	min-width: 115px; 
+	@include trans;
+
+	&:hover {
+		transform: scale(1.1);
+	}
 
 	.logo {
 		@include span(1);
@@ -86,6 +92,11 @@
 		color: #bfbbbb;
 		cursor: pointer;
 		margin-top: 0px;
+		@include trans;
+
+		&:hover {
+			color:$teal;
+		}
 
 	}
 
