@@ -54,18 +54,17 @@
 
 .cta {
     width: 100%;
-    padding: 15px 0;
-    // border: 1px solid red;
+    padding: 15px 5px;
     float: left;
     margin-top: 15px;
+    text-align: center;
+    font-size: 0.8em;
 
     .directions {
         width: span(6);
         float: left;
         border: 1px solid $teal;
-        padding:2px;
         text-decoration: underline;
-
         cursor:pointer;
     }
 
