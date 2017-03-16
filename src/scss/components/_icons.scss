@@ -8,6 +8,7 @@
     max-width: 65px;
     max-height: 65px;
     cursor: pointer;
+    color: $lightgrey;
     @include trans;
 
     @include breakpoint($medium) {
