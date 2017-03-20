@@ -20,7 +20,7 @@ var GoogleMapApi = (function(){
     });
 
     var homeIcon = {
-        url: '../assets/img/home.png',
+        url: '/../assets/img/home.png',
         // This marker is 32 pixels wide by 32 pixels high.
         size: new google.maps.Size(80, 80),
         // The origin for this homeIcon is (0, 0).

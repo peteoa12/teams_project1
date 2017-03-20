@@ -102,7 +102,8 @@
 	float: left;
 	@include span(12);
 	background-color: white;        
-	border-bottom: solid 5px $teal;                 
+	border-bottom: solid 5px $teal; 
+	// padding-bottom: 15px;                
 
 	@include breakpoint($large) {
 		@include span(2 of 12);
@@ -118,7 +119,7 @@
 	background-color: $frosted;
 	height: 100vh;
 	overflow-y: scroll; 
-	// clear: both;
+	// padding-bottom: 15px;
 
 
 	@include breakpoint($large) {
