@@ -21,6 +21,7 @@ body {
 	background: url(../img/background.jpg) no-repeat center;
 	background-size: cover;
 	font-family: 'Arial', sans-serif;
+  overflow-y:scroll;
 }
 
 div, li {
@@ -36,6 +37,7 @@ div, li {
 @import 'components/icons';
 @import 'components/markers';
 @import 'components/stars';
+@import 'components/hamburger';
 @import 'partials/map';
 
 

@@ -7,11 +7,6 @@
 	padding: 0 5px 3px 0;
 	@include trans;
 
-	// &:hover {
-	// 	background-color: #fefefe;
-	// 	transform:scale(1.02);
-	// }
-
 	.result_img {
 		width: span(5 of $list_layout);
 	}
@@ -105,18 +100,20 @@
 
 .result--catagories {
 	float: left;
-	@include span(2 of 12);
-	height: 100vh;
+	@include span(12);
 	background-color: white;        
-	border-right: solid 5px $teal;                 
+	border-bottom: solid 5px $teal;                 
 
 	@include breakpoint($large) {
-		@include span(3 of 12);
+		@include span(2 of 12);
+		height: 100vh;
+		border-bottom: none;
+		border-right: solid 5px $teal;
 	}
 }
 
 .result--options {
-	@include span(last 10 of 12);
+	@include span(12);
 	float: left;
 	background-color: $frosted;
 	height: 100vh;

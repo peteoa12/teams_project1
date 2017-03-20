@@ -1,0 +1,64 @@
+.hamburger {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: -20px;
+    right: 2%;
+    padding: 1em;
+    margin-left: 1em;
+    z-index: 1001;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    transition-delay: 6ms;
+
+    @include breakpoint($medium) {
+        display: none;
+    }
+
+    .nav_title {
+        top: 56px;
+        right: 129%;
+        position: absolute;
+        text-transform: uppercase;
+        color: $lightgrey;
+    }
+}
+
+.hamburger:hover {
+    cursor: pointer;
+}
+.bar {
+    width: 30px;
+    height: 5px;
+    position: absolute;
+    background-color: $icon;
+}
+.hamburger .top {
+    left: 0;
+    top: 50px;
+    transition: all 0.2s ease-in-out;
+}
+.hamburger .middle {
+    left: 0;
+    top: 60px;
+    transition: all 0.2s ease-in-out;
+}
+.hamburger .bottom {
+    left: 0;
+    top: 70px;
+    transition: all 0.2s ease-in-out;
+}
+.top.clicked {
+    transform: rotate(45deg);
+    top: 60px;
+    background-color:$lightgrey ;
+}
+.middle.clicked {
+    display: none;
+}
+.bottom.clicked {
+    transform: rotate(-45deg);
+    top: 60px;
+    background-color: $lightgrey;
+}

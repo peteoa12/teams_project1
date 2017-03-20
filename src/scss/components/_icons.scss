@@ -1,15 +1,23 @@
 
+.icons {
+    @include container;
+    margin: 15px auto;
 
+    @include breakpoint($large) {
+       display: flex;
+       flex-direction:column;
+    }
+}
 
 .icon {
     float: left;
-    margin: 10px span(1);
-    width: span(10);
+    margin: 15px auto;
     max-width: 65px;
     max-height: 65px;
     cursor: pointer;
     color: $lightgrey;
     @include trans;
+    @include gallery(3 of 12);
 
     @include breakpoint($medium) {
         margin: 15px span(3.2);
@@ -17,7 +25,8 @@
 
 
     @include breakpoint($large) {
-        margin: 15px span(2.9);
+       @include gallery(12 of 12);
+       margin: 15px auto;
     }
    
 
@@ -90,9 +99,6 @@
     }
 }
 
-// .icon_title {
-//     color:$darkgrey;
-// }
 
 
 

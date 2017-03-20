@@ -3,6 +3,8 @@
   font-family: 'Source Code Pro', monospace;
   font-weight:300;
   font-size: 0.75em;
+  // bottom: 0;
+  // position: absolute;
 
   @include full;
 	
@@ -25,4 +27,8 @@
 	span {
 		margin-top: 5px;
 	}
+}
+
+#wrapper {
+	flex: 1;
 }

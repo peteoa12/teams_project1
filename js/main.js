@@ -107,3 +107,33 @@ var init = function() {
 	getExtraPlaceData();
 	eventListeners();
 }
+
+//Hamburger menu
+
+  //hamburger
+  $(".hamburger").on("click", function() {
+    $(".top").toggleClass("clicked");
+  });
+
+  $(".hamburger").on("click", function() {
+    $(".middle").toggleClass("clicked");
+  });
+
+  $(".hamburger").on("click", function() {
+    $(".bottom").toggleClass("clicked");
+  });
+
+  $(".hamburger").on("click", function() {
+    $(".menu-main-nav-container").toggleClass("overlay");
+  });
+
+  $(".hamburger").on("click", function() {
+    $(".nav_overlay--mobile ").toggleClass("loaded");
+  });
+
+
+
+
+
+
+
