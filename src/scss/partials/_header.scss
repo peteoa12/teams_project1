@@ -95,10 +95,6 @@
 		margin-top: 0px;
 		@include trans;
 
-		&:hover {
-			color:$teal;
-		}
-
 	}
 
 	@include breakpoint($medium) {
@@ -157,7 +153,7 @@
 
 
 
-	.nav_links--mobile {
+	.nav-links__mobile {
 		line-height: 3em;
 		font-size: 2em;
 		color: $lightgrey;

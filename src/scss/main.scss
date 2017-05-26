@@ -18,14 +18,26 @@ html, body {
 }
 
 body {
-	background: url(../img/background.jpg) no-repeat center;
-	background-size: cover;
-	font-family: 'Arial', sans-serif;
   overflow-y:scroll;
+}
+
+.background-image {
+  background: url(../img/background.jpg) no-repeat center;
+  background-size: cover;
+  font-family: 'Arial', sans-serif;
 }
 
 div, li {
 	@include trans;
+}
+
+a {
+  text-decoration: none;
+  color: $darkgrey;
+
+  &:hover {
+    color:$teal;
+  }
 }
 
 @import 'components/susy';
@@ -38,6 +50,7 @@ div, li {
 @import 'components/markers';
 @import 'components/stars';
 @import 'components/hamburger';
+@import 'components/login';
 @import 'partials/map';
 
 
