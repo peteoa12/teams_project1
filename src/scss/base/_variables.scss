@@ -15,7 +15,8 @@ $shaded:rgba(0,0,0,0.7);
 //Fonts
 $heading: 'Source Sans Pro', sans-serif;
 $body: 'Arial', sans-serif;
-
+$background-color__subheading:#a6aeae;
+$border-color__subheading:#6b5d48;
 //Transitions
 @mixin trans {
 	transition: all 0.2s ease-in-out;

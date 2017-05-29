@@ -5,8 +5,10 @@
 	background-size: cover;
 	background-position: center;
 	max-width: 1400px;
-	margin:0 auto;
+	margin: 0 auto;
+	margin-bottom:span(0.3);
 	@include trans;
+
 	h1 {
 		font-family: $heading;
 		text-transform: uppercase;
@@ -16,11 +18,13 @@
 		color: white;
 		font-weight: bold;
 		line-height: 1.5em;
+		padding: 1.2em 0;
 		font-size: 3em;
 		@include trans;
 
 		@include breakpoint($medium) {
 			font-size: 5.5em;
+			padding: 0;
 			letter-spacing: 1.5em;
 		}
 
@@ -35,3 +39,119 @@
 		}
 	}
 }
+
+.about-section__left,
+.about-section__right,
+.about-section__center {
+	margin-bottom:span(0.5);
+	clear: both;
+	.left-section__blurb,
+	.right-section__blurb,
+	.center-section__blurb {
+		text-align: center;
+		font-family: $body;
+		font-size: 0.708em;
+		color: $darkgrey;
+		line-height: 2em;
+	}
+
+	.left-img__container,
+	.right-img__container {
+		img {
+			width: 100%;
+		}
+	}
+
+	p:nth-child(2) {
+		margin-bottom: span(0.5);
+	}
+
+}
+
+.left-section__blurb,
+.right-section__blurb,
+.center-section__blurb {
+	@include container;
+}
+
+	
+.subheading-container {
+	border: 3px solid $border-color__subheading;
+	margin-bottom: span(0.5);
+	position: relative;
+
+	.about-subheading {
+		color: white;
+		border:8px solid white;
+		text-transform: uppercase;
+		font-weight: 700;
+		letter-spacing: 0.5em;
+		font-size: 1.2em;
+		font-family: $heading;
+		background-color: $background-color__subheading;
+
+	}
+
+	.subheading__border-cover {
+		position: absolute;
+		border-top:4px solid white;
+		height: 4px;
+	}
+
+	.cover1{
+		width: 80%;
+		right: 1.1%;
+	}
+
+	.cover2 {
+		width: 80%;
+		left: 1.1%;
+		bottom: -3px;
+	}
+
+	.cover3 {
+		width: 80%;
+		left: 10.2%;
+	}
+
+}
+
+.about__icon-container {
+	width: 100%;
+	text-align: center;
+	text-transform: uppercase;
+	// border:1px solid red;
+	margin-bottom: span(1);
+	letter-spacing: 0.3em;
+
+	h5 {
+		color: $lightgrey;
+		font-family: $body;
+		margin-top: 5px;
+	}
+
+	.about__icon-border {
+		border-top: 1px solid $border-color__subheading;
+		width: 40%;
+		margin:20px auto;
+	}
+
+	.about__icon-password {
+		font-family: $heading;
+	}
+}
+
+.reminders__item {
+	width: 100%;
+	img {
+		width: 100%;
+	}
+}
+
+
+
+
+
+
+
+

@@ -85,6 +85,7 @@
 	margin-top: 20px;
 	display: none;
 
+
 	li {
 		@include gallery(4 of $list_layout);
 		text-align: center;
@@ -157,7 +158,6 @@
 	}
 
 
-
 	.nav-links__mobile {
 		line-height: 3em;
 		font-size: 2em;
@@ -170,6 +170,10 @@
 			width: 100%;
 		}
 	}
+}
+
+.nav_title {
+	font-family: $heading;
 }
 
 .loaded {
