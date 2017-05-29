@@ -146,6 +146,10 @@
 	img {
 		width: 100%;
 	}
+
+	p {
+		@extend .about-section__center .center-section__blurb;
+	}
 }
 
 
