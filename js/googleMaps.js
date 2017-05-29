@@ -20,7 +20,7 @@ var GoogleMapApi = (function(){
     });
 
     var homeIcon = {
-        url: './teams_project1/assets/img/home.png',
+        url: '../teams_project1/assets/img/home.png',
         // This marker is 32 pixels wide by 32 pixels high.
         size: new google.maps.Size(80, 80),
         // The origin for this homeIcon is (0, 0).
@@ -77,7 +77,7 @@ var GoogleMapApi = (function(){
   function createMarkerFromPlaceId(place) {
 
     var placeIcon = {
-        url: './teams_project1/assets/img/place.png',
+        url: '../teams_project1/assets/img/place.png',
         // This marker is 32 pixels wide by 32 pixels high.
         size: new google.maps.Size(60, 60),
         // The origin for this image is (0, 0).

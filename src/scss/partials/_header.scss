@@ -97,6 +97,11 @@
 
 	}
 
+	a {
+		text-decoration: none;
+    	color: darkgrey;
+	}
+
 	@include breakpoint($medium) {
 		display: inherit;
 		li {

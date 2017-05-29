@@ -81,7 +81,6 @@ function hideShow(){
 		places.forEach(function(place) {
 			if (!place.google_data) return;
 			if (place.placeType == placeType) {
-				// console.log("show", place)
 				$(place.$element).show();
 				GoogleMapApi.showPin(place.google_data.marker);
 			} else {

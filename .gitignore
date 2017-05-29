@@ -28,9 +28,13 @@ build/Release
 
 # Dependency directories
 node_modules
-.DS_Store
 jspm_packages
+
+#SFTP config
 sftp-config.json
+
+#OSX storage
+.DS_Store 
 
 # Optional npm cache directory
 .npm

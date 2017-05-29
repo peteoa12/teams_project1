@@ -8,15 +8,6 @@
 	box-sizing:border-box;
 }
 
-html, body {
-  height: 100%;
-  width: 100%;
-  margin: 0;
-  padding:0;
-  overflow: hidden;
-  -webkit-font-smoothing: antialiased;
-}
-
 body {
   overflow-y:scroll;
 }
@@ -46,6 +37,7 @@ a {
 @import 'partials/header';
 @import 'partials/footer';
 @import 'partials/results';
+@import 'partials/about';
 @import 'components/icons';
 @import 'components/markers';
 @import 'components/stars';

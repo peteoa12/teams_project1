@@ -1,0 +1,37 @@
+
+.about-hero {
+	background-image: url(../img/about-hero.jpg); 
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	max-width: 1400px;
+	margin:0 auto;
+	@include trans;
+	h1 {
+		font-family: $heading;
+		text-transform: uppercase;
+		letter-spacing: 1em;
+		margin:0 auto;
+		width: 80%;
+		color: white;
+		font-weight: bold;
+		line-height: 1.5em;
+		font-size: 3em;
+		@include trans;
+
+		@include breakpoint($medium) {
+			font-size: 5.5em;
+			letter-spacing: 1.5em;
+		}
+
+		@include breakpoint($large) {
+			font-size: 8.5em;
+			letter-spacing: 1.2em;
+			line-height: 2em;
+		}
+
+		@include breakpoint($jumbo) {
+			letter-spacing: 1.7em;
+		}
+	}
+}
