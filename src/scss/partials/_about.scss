@@ -4,7 +4,7 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
-	max-width: 1400px;
+	max-width: 1288px;
 	margin: 0 auto;
 	margin-bottom:span(0.3);
 	@include trans;
@@ -25,12 +25,12 @@
 		@include breakpoint($medium) {
 			font-size: 5.5em;
 			padding: 0;
-			letter-spacing: 1.5em;
+			letter-spacing: 1.3em;
 		}
 
 		@include breakpoint($large) {
 			font-size: 8.5em;
-			letter-spacing: 1.2em;
+			letter-spacing: 1em;
 			line-height: 2em;
 		}
 
@@ -43,7 +43,8 @@
 .about-section__left,
 .about-section__right,
 .about-section__center {
-	margin-bottom:span(0.5);
+	max-width: 1288px;
+	margin: 0 auto;
 	clear: both;
 	.left-section__blurb,
 	.right-section__blurb,
@@ -53,12 +54,17 @@
 		font-size: 0.708em;
 		color: $darkgrey;
 		line-height: 2em;
+
+		@include breakpoint($large) {
+			font-size: 1em;
+		}
 	}
 
 	.left-img__container,
 	.right-img__container {
 		img {
 			width: 100%;
+			margin-bottom:span(0.3);
 		}
 	}
 
@@ -68,10 +74,117 @@
 
 }
 
+.about-section__left {
+	@include breakpoint($medium) {
+		.left-section__blurb {
+			float: right;
+			width: span(5 of $medium_layout);
+			text-align: left;
+			
+		}
+
+		.subheading-container {
+			text-align: center;
+		}
+
+		.left-img__container {
+			float: left;
+			width: span(7 of $medium_layout);
+		}
+		
+	}
+}
+
+.about-section__right {
+	@include breakpoint($medium) {
+		.right-section__blurb {
+			float: left;
+			width: span(5 of $medium_layout);
+			text-align: left;
+			margin-bottom: 20px;
+			
+		}
+
+		.subheading-container {
+			text-align: center;
+		}
+
+		.right-img__container {
+			float: right;
+			width: span(7 of $medium_layout);
+		}
+		
+	}
+}
+
+.about-section__center {
+
+	.reminders__item {
+		width: 70%;
+		margin: 20px auto;
+		text-align: center;
+		font-family: $body;
+		font-size: 0.708em;
+		color: $darkgrey;
+		line-height: 2em;
+		img {
+			width: 100%;
+		}
+	}
+
+
+	@include breakpoint($medium) {
+		.center-section__blurb {
+			width: span(5 of $medium_layout);
+			margin: 30px auto;			
+		}
+
+		.subheading-container {
+			text-align: center;
+		}
+
+		.about__icon-container {
+			float:left;
+			width: 49%;
+			margin-right: 1%;
+		}
+
+		.reminders__item {
+			width:32%;
+			float: left;
+			margin-right: 2%;
+			text-align: left;
+			&:nth-child(4){
+				margin-right: 0;
+			}
+		}	
+		
+	}
+
+	@include breakpoint($large){
+		.about__icon-container {
+			float:left;
+			width: 24%;
+			margin:30px 1% 50px 0;
+		}
+
+		.reminders__item {
+			font-size: 1em;
+		}
+
+		
+	}
+}
+
+
 .left-section__blurb,
 .right-section__blurb,
 .center-section__blurb {
 	@include container;
+
+	p:nth-child(2) {
+		margin-bottom: 10%;
+	}
 }
 
 	
@@ -141,12 +254,7 @@
 	}
 }
 
-.reminders__item {
-	width: 100%;
-	img {
-		width: 100%;
-	}
-}
+
 
 
 

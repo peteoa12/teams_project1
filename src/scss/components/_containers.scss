@@ -14,12 +14,15 @@ html, body {
 .nav_wrapper {
   margin-top: 5px;
   margin-bottom: 5px;
+  @include container;
 }
 
 .page-wrap {
 	min-height: 100vh;
-  max-width: 1640px;
+  max-width: 1288px;
+  margin: 0 auto;
   @include container;
+  // position: relative;
 }
 
 .query_container {

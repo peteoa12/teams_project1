@@ -4,6 +4,7 @@
 	float: left;
 	background-color: #ffffff;
 	-webkit-box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.80);
+	
 }
 
 .logo_container { 
@@ -164,12 +165,20 @@
 		color: $lightgrey;
 		cursor: pointer;
 		display: block;
+		font-family: $heading;
 
 		&:hover {
 			background-color: $icon;
 			width: 100%;
 		}
 	}
+}
+
+.header-scrolled {
+	position: fixed;
+	top: 0;
+	z-index: 88;
+	@include trans;
 }
 
 .nav_title {

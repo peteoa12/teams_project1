@@ -130,6 +130,15 @@ var init = function() {
     $(".nav_overlay--mobile ").toggleClass("loaded");
   });
 
+//Sticky header
+$(window).scroll(function(){
+  if($(this).scrollTop()> 150) {
+    $('.header').addClass('header-scrolled');
+  } else {
+    $('.header').removeClass('header-scrolled');
+  }
+})
+
 
 
 
