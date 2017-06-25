@@ -20,11 +20,30 @@ html, body {
 .page-wrap {
 	min-height: 100vh;
   max-width: 1288px;
-  margin: 0 auto;
   @include container;
-  // position: relative;
 }
 
 .query_container {
   width: 100%;
 }
+
+.background-image {
+  background: url(../img/background.jpg) no-repeat center;
+  background-size: cover;
+  font-family: 'Arial', sans-serif;
+  min-height: 100vh;
+  /* equal to footer height */
+  margin-bottom: -60px; 
+
+  &:after {
+    content: "";
+    display: block;
+    height: 60px; 
+
+  }
+}
+
+
+// .wrapper {
+
+// }

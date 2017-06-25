@@ -10,7 +10,7 @@ var getExtraPlaceData = function() {
 	})
 }
 
-var addPlaceToDom = function( place, data, photo ) {
+var addPlaceToDom = function( place, data) {
 	console.log(data);
 
 	place.$element = $(
@@ -18,7 +18,7 @@ var addPlaceToDom = function( place, data, photo ) {
                         <div class="result_title">
                             <h2>${data.name}<span>- Charleston, SC (US)</span></h2>
                         </div>
-                        <img class="result_img" src="https://pbs.twimg.com/profile_images/608377553808703489/2gBSCjiq.jpg">
+                        <img class="result_img" src="${place.photo}">
                         <div class="result_content">
                             <div class="rating_container">
                                 <div class="rating">${data.rating}</div>
@@ -40,8 +40,8 @@ var addPlaceToDom = function( place, data, photo ) {
                             </div>
                              
                             <div class="review_container">
-                                <h6 class="user_title">Host Description</h6>
-                                <p class="reveiw">Lorem ipsum dolor sit amet, consectetur adipisicing elit!</p>
+                                
+                                <p class="reveiw">${place.review}</p>
                             </div>
                             <div class="cta">
                             	<div class="directions">

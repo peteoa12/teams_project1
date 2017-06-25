@@ -33,11 +33,7 @@
     h6 {
         text-align: center;
         margin-bottom: 10px;
-        font-size: 0.5em;
-
-        @include breakpoint($medium) {
-            font-size: 1em;
-        }
+        font-size: 1em;
     }
 
     circle,

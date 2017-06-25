@@ -23,7 +23,7 @@ var places = [
 		star: false,
 		placeType: "dining",
 		review: '"The cocktails are to die for!"',
-		photo: 'http://img1.southernliving.timeinc.net/sites/default/files/styles/etr_slider_square/public/image/2014/08/main/husk-nashville-tennessee-m.jpg?itok=4Rli0vyO&timestamp=1423091763'
+		photo: 'https://static1.squarespace.com/static/572b9396d210b8c5f4d0a087/t/572bb127555986833be72991/1468966056123/?format=500w'
 	},
 	{
 		id: 3,
@@ -71,7 +71,7 @@ var places = [
 		star: false,
 		placeType: "gas",
 		review: '"Always the lowest gas rates!"',
-		photo:'https://lh3.googleusercontent.com/eEm8uYqFqEVcavL4H7B6nxhs8gbqSQ6BAosrI1qhrPC04JA7GekxbSeP3opOx_IUsZTA=w300'
+		photo:'https://pbs.twimg.com/profile_images/458665343414571008/3eBlzmr2.png'
 	},
 	{
 		id: 9,

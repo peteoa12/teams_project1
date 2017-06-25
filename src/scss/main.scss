@@ -8,15 +8,10 @@
 	box-sizing:border-box;
 }
 
-body {
-  overflow-y:scroll;
-}
+// body {
+//   overflow-y:scroll;
+// }
 
-.background-image {
-  background: url(../img/background.jpg) no-repeat center;
-  background-size: cover;
-  font-family: 'Arial', sans-serif;
-}
 
 div, li {
 	@include trans;
